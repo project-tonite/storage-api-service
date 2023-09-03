@@ -256,3 +256,10 @@ paket-files/
 # Use abp install-libs to restore.
 **/wwwroot/libs/*
 
+/storage-api-service/storage-api-service.Tests/bin/Debug/net6.0/nunit_random_seed.tmp
+/storage-api-service/.vs/storage-api-service/FileContentIndex/e0440a2e-4dfe-4dad-8084-4982533ac24e.vsidx
+/storage-api-service/.vs/storage-api-service/FileContentIndex/b1e6a90c-a653-4ed0-8dbe-1af5f102b139.vsidx
+/storage-api-service/.vs/storage-api-service/FileContentIndex/4b3508a6-f00f-4d30-9084-f0037fcd0bdd.vsidx
+/storage-api-service/.vs/storage-api-service/v17/TestStore/0/000.testlog
+/storage-api-service/.vs/storage-api-service/v17/.futdcache.v2
+/storage-api-service/.vs/storage-api-service/v17/.suo

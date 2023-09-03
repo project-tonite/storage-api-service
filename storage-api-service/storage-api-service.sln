@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "storage-api-service.DataAcc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "storage-api-service.Services", "storage-api-service.Services\storage-api-service.Services.csproj", "{E1519644-1477-47E5-8107-5AB26DD25535}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "storage-api-service.Tests", "storage-api-service.Tests\storage-api-service.Tests.csproj", "{0A99B0EB-0EFB-4429-A6D1-D204B35C0B86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{E1519644-1477-47E5-8107-5AB26DD25535}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1519644-1477-47E5-8107-5AB26DD25535}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1519644-1477-47E5-8107-5AB26DD25535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A99B0EB-0EFB-4429-A6D1-D204B35C0B86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A99B0EB-0EFB-4429-A6D1-D204B35C0B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A99B0EB-0EFB-4429-A6D1-D204B35C0B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A99B0EB-0EFB-4429-A6D1-D204B35C0B86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

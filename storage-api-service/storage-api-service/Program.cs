@@ -39,3 +39,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
+//makes the program class vissible to the test project
+public partial class Program { }
