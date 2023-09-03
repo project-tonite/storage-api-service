@@ -263,3 +263,4 @@ paket-files/
 /storage-api-service/.vs/storage-api-service/v17/TestStore/0/000.testlog
 /storage-api-service/.vs/storage-api-service/v17/.futdcache.v2
 /storage-api-service/.vs/storage-api-service/v17/.suo
+/storage-api-service/storage-api-service.Tests/obj/Debug/net6.0/storage-api-service.Tests.csproj.AssemblyReference.cache
