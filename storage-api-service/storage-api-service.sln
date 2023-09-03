@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "storage-api-service", "storage-api-service\storage-api-service.csproj", "{B5FAA4AE-8C00-4857-980B-5553F292F0EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "storage-api-service", "storage-api-service\storage-api-service.csproj", "{B5FAA4AE-8C00-4857-980B-5553F292F0EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "storage-api-service.Models", "storage-api-service.Models\storage-api-service.Models.csproj", "{FE8CAD25-E12B-45FE-B5CD-EC6E90EC5DFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "storage-api-service.DataAccess", "storage-api-service.DataAccess\storage-api-service.DataAccess.csproj", "{0ADE00C4-469A-4CF1-9771-722161251EE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{B5FAA4AE-8C00-4857-980B-5553F292F0EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5FAA4AE-8C00-4857-980B-5553F292F0EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5FAA4AE-8C00-4857-980B-5553F292F0EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE8CAD25-E12B-45FE-B5CD-EC6E90EC5DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE8CAD25-E12B-45FE-B5CD-EC6E90EC5DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE8CAD25-E12B-45FE-B5CD-EC6E90EC5DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE8CAD25-E12B-45FE-B5CD-EC6E90EC5DFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ADE00C4-469A-4CF1-9771-722161251EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ADE00C4-469A-4CF1-9771-722161251EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ADE00C4-469A-4CF1-9771-722161251EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ADE00C4-469A-4CF1-9771-722161251EE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
