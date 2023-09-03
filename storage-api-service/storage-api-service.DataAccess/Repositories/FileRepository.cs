@@ -6,7 +6,7 @@ using System.Text;
 
 namespace storage_api_service.Models.Repositories.IRepository
 {
-    public class FileRepository : Repository<FileEntity>
+    public class FileRepository : Repository<FileEntity>, IFileRepository
     {
         private readonly FileDbContext _db;
 
@@ -18,6 +18,10 @@ namespace storage_api_service.Models.Repositories.IRepository
         public void Update(FileEntity obj)
         {
             _db.Update(obj);
+        }
+        public async Task SaveChangesAsync()
+        {
+           await  _db.SaveChangesAsync();
         }
     }
 }

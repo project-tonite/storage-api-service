@@ -6,7 +6,7 @@
 *.user
 *.userosscache
 *.sln.docstates
-appsettings.json
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
@@ -251,17 +251,8 @@ paket-files/
 .idea/
 *.sln.iml
 
-# Sdasocial
-src/Sdasocial.Web/Logs/*
-src/Sdasocial.Web/Logs/*
-src/Sdasocial.IdentityServer/Logs/*
-src/Sdasocial.HttpApi.Host/Logs/*
-src/Sdasocial.HttpApi.HostWithIds/Logs/*
-src/Sdasocial.DbMigrator/Logs/*
-src/Sdasocial.Blazor.Server/Logs/*
-src/Sdasocial.Blazor.Server.Tiered/Logs/*
+
 
 # Use abp install-libs to restore.
 **/wwwroot/libs/*
-/sdakccapi/firebase-auth.json
-/sdakccapi/client_secrets.json
+

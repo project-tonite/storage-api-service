@@ -1,3 +1,11 @@
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using storage_api_service.Models;
+using storage_api_service.Models.Repositories.IRepository;
+using storage_api_service.Services;
+using storage_api_service.Services.Interfaces;
+using System.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +14,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IFileService, FileService>();
+builder.Services.AddScoped<IFileRepository, FileRepository>();
+builder.Services.AddDbContext<FileDbContext>(options =>
+                    options.UseSqlServer(builder.Configuration["ConnectionStrings:DevConnection"]));
 
 var app = builder.Build();
 

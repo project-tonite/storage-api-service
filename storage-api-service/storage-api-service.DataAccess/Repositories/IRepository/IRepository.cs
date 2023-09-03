@@ -27,6 +27,24 @@ namespace storage_api_service.Models.Repositories.IRepository
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entity);
 
+        //async Methods
+        Task<T> GetAsync(int id);
+
+        Task<IEnumerable<T>> GetAllAsync(
+            Expression<Func<T, bool>> filter = null,
+            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
+            string includeProperties = null
+            );
+
+        Task<T> GetFirstOrDefaultAsync(
+            Expression<Func<T, bool>> filter = null,
+            string includeProperties = null
+            );
+
+        Task AddAsync(T entity);
+        Task RemoveAsync(int id);
+        Task RemoveAsync(T entity);
+        Task RemoveRangeAsync(IEnumerable<T> entity);
 
     }
 }

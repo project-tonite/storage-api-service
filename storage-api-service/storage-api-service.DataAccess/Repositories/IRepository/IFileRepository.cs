@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace storage_api_service.Models.Repositories.IRepository
 {
-    public interface IFileRepository:IRepository<FileEntity>, IRepositoryAsync<FileEntity>
+    public interface IFileRepository:IRepository<FileEntity>
     {
         void Update(FileEntity file);
+        Task SaveChangesAsync();
     }
 }
