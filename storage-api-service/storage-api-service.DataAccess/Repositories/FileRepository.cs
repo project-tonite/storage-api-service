@@ -17,7 +17,19 @@ namespace storage_api_service.Models.Repositories.IRepository
 
         public void Update(FileEntity obj)
         {
-            _db.Update(obj);
+            var objFromDb = _db.Files.FirstOrDefault(x => x.Id == obj.Id);
+
+            if(objFromDb is not null)
+            {
+                objFromDb.UpdatedAt = DateTime.UtcNow;
+                objFromDb.Content = obj.Content;
+                objFromDb.Version = obj.Version;
+                objFromDb.FileName = obj.FileName;
+                _db.Update(objFromDb);
+            }
+          
+            //To DO: Throw not found exception and handle it from Global exceptions
+         
         }
         public async Task SaveChangesAsync()
         {

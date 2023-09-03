@@ -1,4 +1,5 @@
-﻿using storage_api_service.Models;
+﻿using Microsoft.AspNetCore.Http;
+using storage_api_service.Models;
 using storage_api_service.Models.Repositories.IRepository;
 using storage_api_service.Services.Interfaces;
 using System;
@@ -45,6 +46,20 @@ namespace storage_api_service.Services
         {
             await _fileRepository.RemoveAsync(fileId);
             await _fileRepository.SaveChangesAsync();
+        }
+
+        public async Task<byte[]> ReadFileData(IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+            {
+                return null;
+            }
+
+            using (var memoryStream = new MemoryStream())
+            {
+                await file.CopyToAsync(memoryStream);
+                return memoryStream.ToArray();
+            }
         }
     }
 
