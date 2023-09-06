@@ -53,8 +53,6 @@ The File Storage API is a simple yet powerful service that allows you to upload,
 5. **Delete a File:**
    - Use the `DELETE /api/files/{id}` endpoint to delete a file by specifying its ID in the URL.
 
-Please note that you need to authenticate and have the necessary permissions to perform these actions. Ensure that you include the appropriate headers or tokens when making requests to the API.
-
 For development and testing, you can use tools like `curl`, `Postman`, or your favorite programming language to interact with the API.
 
 ## Sample API Usage
