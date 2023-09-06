@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Upload Form</title>
+</head>
+<body>
+    <h1>Upload a File</h1>
+    <form action="https://localhost:7180/api/files" method="POST" enctype="multipart/form-data">
+        <label for="file">Choose a file:</label>
+        <input type="file" id="file" name="file" accept=".txt, .pdf, .docx" required>
+        
+        <label for="version">Version:</label>
+        <input type="text" id="version" name="Version">
+        
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
