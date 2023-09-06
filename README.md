@@ -55,6 +55,8 @@ The File Storage API is a simple yet powerful service that allows you to upload,
 
 For development and testing, you can use tools like `curl`, `Postman`, or your favorite programming language to interact with the API.
 
+**Note:** If you prefer, you can also make use of the **uploadTestUI.html** file located within the test project. This file serves as a dummy UI for uploading physical files to the endpoint. Just remember to update the `action` attribute in the form to reflect the URL where your API is hosted/running.
+
 ## Sample API Usage
 
 Here is a sample `curl` command to create a new file:
